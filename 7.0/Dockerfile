@@ -22,7 +22,7 @@ RUN set -ex \
 RUN set -ex \
       && DEBIAN_FRONTEND=noninteractive \
       && apt-get update && apt-get install -y \
-         supervisor \
+         curl \
          apache2 libapache2-mod-fastcgi \
          php${PHP_VERSION}-cli \
          php${PHP_VERSION}-common \

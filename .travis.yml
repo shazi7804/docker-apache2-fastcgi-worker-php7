@@ -7,10 +7,11 @@ env:
   matrix:
     - PHP_VERSION=7.0
     - PHP_VERSION=7.1
-
 script:
   - travis_retry docker build -t ${REPO}:${PHP_VERSION} ${PHP_VERSION}/.
-  - docker run -it ${REPO}:${PHP_VERSION} node -v
+  - docker run -it --name=docker ${REPO}:${PHP_VERSION}
+  - docker exec docker bash -c "echo '<?php phpinfo(); ?>' >> /var/www/html/index.php"
+  - docker exec docker  curl http://localhost | grep "PHP LICENSE"
 
 notifications:
   email: false

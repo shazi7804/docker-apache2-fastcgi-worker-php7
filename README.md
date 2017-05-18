@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/shazi7804/docker-apache2-fastcgi-worker-php7.svg?branch=master)](https://travis-ci.org/shazi7804/docker-apache2-fastcgi-worker-php7)
 # What is this?
-  The repository is PHP7 docker images built on [Ubuntu 16.04](http://releases.ubuntu.com/16.04/).
+  The repository is php7 docker images built on [Ubuntu 16.04](http://releases.ubuntu.com/16.04/).
 
 # Feature
   - Apache 2.4

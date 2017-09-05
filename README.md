@@ -10,7 +10,8 @@
 
 # Tags/Versions
   - 7.0
-  - 7.1, latest
+  - 7.1 
+  - 7.2, latest
 
 # How to get images
 
